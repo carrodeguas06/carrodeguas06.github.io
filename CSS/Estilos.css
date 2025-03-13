@@ -4,6 +4,7 @@
     font-family: Century Gothic;
 }
 
+/*Cambia la disposicion dependiendo de el tamaño*/
 @media (max-width: 600px) {
     main{
         flex-flow: column wrap;
