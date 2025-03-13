@@ -332,6 +332,10 @@ footer{
     padding: 1vw;
 }
 
+#proyectos div article:hover{
+    background-color: rgb(174, 174, 174);
+}
+
 
 #proyectos article{
     /*Estilo de los bloques de el grid*/
