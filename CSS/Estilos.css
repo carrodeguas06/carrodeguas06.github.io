@@ -1,0 +1,420 @@
+*{
+    /*Estilo por defecto*/
+    margin: 0;
+    font-family: Century Gothic;
+}
+
+body{
+    background-color: rgb(200, 200, 200);
+}
+
+img{
+    /*Para que todas las imagenes tengan sombra*/
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+article{
+    /*Para que todas los articles tengan sombra*/
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    /*Estilo de los textos h1*/
+    color: #171717;
+    font-size: 5vh;
+    text-align: center;
+}
+
+h2{
+    /*Estilo de los textos h2*/
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+
+header{
+    /*Fijar el menu de navegación*/
+    position: fixed;
+    width: 100%;
+    /*Colocación de el menu de navegacion de la web*/
+    display: flex;
+    /*Para que vaya en horizontal y seguido*/
+    flex-flow: row wrap;
+    background-color: rgb(23, 23, 23);
+    padding: 2.5vh;
+    /*Alinear el contenido en el centro en el eje x e y*/
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    /*Estilo de los enlaces*/
+    text-align: center;
+    color: gainsboro;
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 10%;
+    transition: all 0.7s ease;
+}
+
+header a:hover{
+    /*Estilo al poner encima el ratón*/
+    background-color: rgb(35, 35, 35);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main{
+    /*Colocación de los elementos de el main*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Estilo del main*/
+    padding: 5vh;
+    padding-top: 10vh;
+}
+
+main article{
+    /*Para que no tenga sombra los article del main*/
+    box-shadow: none;
+}
+
+table{
+    /*Estilo de las tablas*/
+    border-collapse: collapse ;
+    border-radius: 1vh;
+    margin: 2vw;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+th, tr, td{
+    /*Estilo de las tablas*/
+    padding: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /*Alineación de el texto en el eje x e y*/
+    text-align: center;
+    align-content: center;
+}
+
+thead th{
+    /*Estilo de las tablas*/
+    border-top-left-radius: 1vh;
+}
+
+thead th+th{
+    /*Estilo de las tablas*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 1vh;
+}
+  
+tbody{
+    /*Estilo de las tablas*/
+    background-color: rgb(200, 200, 200);
+}
+
+tbody tr+tr+tr th{
+    /*Estilo de las tablas*/
+    border-bottom-left-radius: 1vh;
+}
+
+tbody tr+tr+tr td{
+    /*Estilo de las tablas*/
+    border-bottom-right-radius: 1vh;
+}
+
+thead{
+    /*Estilo de las tablas*/
+    background-color: rgb(23, 23, 23);
+    color: gainsboro;
+    border: none;
+}
+
+fieldset{
+    /*Estilo de el bloque del cuestionario*/
+    background-color: rgb(200, 200, 200);
+    border-radius: 2vh;
+    padding: 2vh;
+    border: #171717 solid 0.25vh;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /*Alineacion en el eje y*/
+    align-content: center;
+}
+
+input, textarea{
+    /*Estilo de los contenedores de texto*/
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+}
+
+textarea {
+    /*Para que no se pueda cambiar el tamaño de el textarea*/
+    resize: none;
+}
+
+footer{
+    /*Estilo de el footer*/
+    background-color: rgb(23, 23, 23);
+    color: gainsboro;
+    padding: 1vw;
+    /*Alineación de el contenido en los ejes x e y*/
+    text-align: center;
+    align-content: center;
+}
+
+#info h1{
+    /*Estilo y alineación de el h1*/
+    text-align: left;
+    font-size: 7vh;
+}
+
+#info h2{
+    /*Estilo y alineación de el h2*/
+    text-align: left;
+}
+
+#foto{
+    /*Estilo de la foto*/
+    flex-grow: 1;
+    text-align: center;
+}
+
+#info{
+    /*Crecimiento de info*/
+    flex-grow: 3;
+}
+
+#yo{
+    /*Estilo de mi imagen*/
+    height: 45%;
+    width: 45%;
+    border: 1vh rgb(23, 23, 23) solid;
+    border-radius: 100%;
+}
+
+#sobremi{
+    /*Estilo de información sobre mi*/
+    background-color:rgb(229, 229, 229);
+    /*Estilo de el grid*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh 1vw;
+    padding: 1vw;
+    /*Colocación de el grid*/
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "habilidades . formacion"
+    "intereses intereses intereses"
+    "ide imagen ss"
+    "rrss rrss rrss"
+    ;
+}
+
+#sobremi article{
+    /*Estilo de los contenedores de el grid*/
+    background-color: rgb(200, 200, 200);
+    border-radius: 2vh;
+    padding: 2vh;
+    border: #171717 solid 0.25vh;
+}
+
+#titulo{
+    /*Contenedor de el grid*/
+    grid-area: titulo;
+    align-content: center;
+    text-align: center;
+}
+
+#habilidades{
+    /*Contenedor de el grid*/
+    grid-area: habilidades;
+    align-content: center;
+}
+
+#formacion{
+    /*Contenedor de el grid*/
+    grid-area: formacion;
+    align-content: center;
+}
+
+#intereses{
+    /*Contenedor de el grid*/
+    grid-area: intereses;
+}
+
+#sfsk{
+    /*Contenedor de el grid*/
+    grid-area: ss;
+    align-content: center;
+}
+
+#ide{
+    /*Contenedor de el grid*/
+    grid-area: ide;
+    align-content: center;
+}
+
+#rrss{
+    /*Contenedor de el grid*/
+    grid-area: rrss;
+}
+
+#imagengrid{
+    /*Contenedor de el grid*/
+    grid-area: imagen;
+}
+
+#imagengrid img{
+    /*Estilo de la imagen de el grid*/
+    width: 100%;
+    border-radius: 1vw;
+}
+
+#rrss div{
+    /*Colocación y estilo de los contenedores donde se contienen las imagenes de las redes sociales*/
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+#rrss img{
+    /*Quitar las sombras a las imagenes de las redes sociales*/
+    box-shadow: none;
+}
+
+#mail{
+    /*Estilo imagen red social*/
+    width: 5vw;
+}
+
+#git{
+    /*Estilo imagen red social*/
+    width: 5vw;
+}
+
+#lin{
+    /*Estilo imagen red social*/
+    width: 5vw;
+}
+
+#html{
+    /*Imagen de la lista con su tecnologia*/
+    list-style-image: url(IMG/html.png);
+}
+
+#css{
+    /*Imagen de la lista con su tecnologia*/
+    list-style-image: url(IMG/CSS.png);
+}
+
+#java{
+    /*Imagen de la lista con su tecnologia*/
+    list-style-image: url(IMG/java.png);
+}
+
+#sql{
+    /*Imagen de la lista con su tecnologia*/
+    list-style-image: url(IMG/mysql.png);
+}
+
+#proyectos{
+    /*Estilo grid*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh 1vw;
+    padding: 1vw;
+    /*Colocación de el grid*/
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "1 2 3"
+    ;
+}
+
+#proyectos h1{
+    /*Nombre de el area de el grid*/
+    grid-area: titulo;
+}
+
+#proyectos+article{
+    /*Nombre de el area de el grid*/
+    grid-area: 1;
+}
+
+#proyectos+article+article{
+    /*Nombre de el area de el grid*/
+    grid-area: 2;
+}
+
+#proyectos+article+article+article{
+    /*Nombre de el area de el grid*/
+    grid-area: 3;
+}
+
+
+#proyectos article{
+    /*Estilo de los bloques de el grid*/
+    background-color: rgb(229, 229, 229);
+    border-radius: 2vh;
+    padding: 2vh;
+    border: #171717 solid 0.25vh;
+}
+
+#proyectos article img{
+    /*Estilo de las fotos de los proyectos*/
+    width: 100%;
+    border-radius: 1vw;
+}
+
+#proyectos article p{
+    /*Estilo de el texto de los proyectos*/
+    text-align: center;
+    justify-content: end;
+}
+
+#idiomas{
+    /*Estilo de la sección de idiomas*/
+    background-color:rgb(229, 229, 229);
+    padding: 1vw;
+    /*Colocación de el contenido de la sección*/
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#experiencia{
+    /*Colocación y estilo de la sección de experiencia*/
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1vw;
+}
+
+#experiencia article{
+    /*Estilo de el bloque con la experiencia poseida*/
+    background-color: rgb(229, 229, 229);
+    border-radius: 2vh;
+    padding: 2vh;
+    border: #171717 solid 0.25vh;
+}
+
+#contacto{
+    /*Estilo de la sección contacto*/
+    background-color:rgb(229, 229, 229);
+    padding: 1vw;
+    /*Colocación de la sección*/
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#boton{
+    /*Estilo de el botón*/
+    width: 100%;
+    border-radius: 1vh;
+    background-color: rgb(23, 23, 23);
+    color: gainsboro;
+    border: darkgray solid 0.25vh;
+}
