@@ -332,11 +332,6 @@ footer{
     padding: 1vw;
 }
 
-#proyectos article:hover{
-    background-color: rgb(174, 174, 174);
-}
-
-
 #proyectos article{
     /*Estilo de los bloques de el grid*/
     background-color: rgb(229, 229, 229);
@@ -344,6 +339,10 @@ footer{
     padding: 2vh;
     border: #171717 solid 0.25vh;
     transition: all 0.7s ease;
+}
+
+#proyectos article:hover{
+    background-color: rgb(174, 174, 174);
 }
 
 #proyectos article img{
