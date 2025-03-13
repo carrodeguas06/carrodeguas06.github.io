@@ -4,6 +4,12 @@
     font-family: Century Gothic;
 }
 
+@media (max-width: 600px) {
+    main{
+        flex-flow: column wrap;
+    }
+}
+
 body{
     background-color: rgb(200, 200, 200);
 }
@@ -19,6 +25,7 @@ article{
 }
 
 h1{
+    margin-top: 5vh;
     /*Estilo de los textos h1*/
     color: #171717;
     font-size: 5vh;
@@ -32,6 +39,8 @@ h2{
 }
 
 header{
+    /*Para que se superponga a todo*/
+    z-index: 5;
     /*Fijar el menu de navegación*/
     position: fixed;
     width: 100%;
@@ -69,7 +78,7 @@ main{
     align-items: center;
     /*Estilo del main*/
     padding: 5vh;
-    padding-top: 10vh;
+    padding-top: 20vh;
 }
 
 main article{
@@ -177,11 +186,6 @@ footer{
     text-align: center;
 }
 
-#info{
-    /*Crecimiento de info*/
-    flex-grow: 3;
-}
-
 #yo{
     /*Estilo de mi imagen*/
     height: 45%;
@@ -277,6 +281,7 @@ footer{
     align-items: center;
     justify-content: space-around;
     background-color: transparent;
+    padding-top: 3vh;
 }
 
 #rrss img{
@@ -319,37 +324,12 @@ footer{
     list-style-image: url(IMG/mysql.png);
 }
 
-#proyectos{
-    /*Estilo grid*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#proyectos div{
+    /*Estilo FlexBox*/
+    display: flex;
+    flex-flow: row nowrap;
     gap: 1vh 1vw;
     padding: 1vw;
-    /*Colocación de el grid*/
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "1 2 3"
-    ;
-}
-
-#proyectos h1{
-    /*Nombre de el area de el grid*/
-    grid-area: titulo;
-}
-
-#proyectos+article{
-    /*Nombre de el area de el grid*/
-    grid-area: 1;
-}
-
-#proyectos+article+article{
-    /*Nombre de el area de el grid*/
-    grid-area: 2;
-}
-
-#proyectos+article+article+article{
-    /*Nombre de el area de el grid*/
-    grid-area: 3;
 }
 
 
