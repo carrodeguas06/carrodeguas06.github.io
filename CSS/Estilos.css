@@ -332,7 +332,7 @@ footer{
     padding: 1vw;
 }
 
-#proyectos div article:hover{
+#proyectos article:hover{
     background-color: rgb(174, 174, 174);
 }
 
