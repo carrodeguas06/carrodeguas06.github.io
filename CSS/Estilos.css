@@ -330,6 +330,7 @@ footer{
     flex-flow: row nowrap;
     gap: 1vh 1vw;
     padding: 1vw;
+    transition: all 0.7s ease;
 }
 
 #proyectos div article:hover{
@@ -343,6 +344,7 @@ footer{
     border-radius: 2vh;
     padding: 2vh;
     border: #171717 solid 0.25vh;
+
 }
 
 #proyectos article img{
