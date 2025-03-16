@@ -6,6 +6,7 @@
 
 /*Cambia la disposicion dependiendo de el tamaño*/
 @media (max-width: 600px) {
+
     main{
         flex-flow: column wrap;
     }
@@ -18,6 +19,11 @@ body{
 img{
     /*Para que todas las imagenes tengan sombra*/
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section, article, img{
+    /*Animación de aparición*/
+    animation: aparecer 3s ease;
 }
 
 article{
@@ -196,6 +202,7 @@ footer{
 }
 
 #sobremi{
+    padding: 1vmax;
     /*Estilo de información sobre mi*/
     background-color:rgb(229, 229, 229);
     /*Estilo de el grid*/
@@ -304,26 +311,6 @@ footer{
     width: 5vw;
 }
 
-#html{
-    /*Imagen de la lista con su tecnologia*/
-    list-style-image: url(IMG/html.png);
-}
-
-#css{
-    /*Imagen de la lista con su tecnologia*/
-    list-style-image: url(IMG/CSS.png);
-}
-
-#java{
-    /*Imagen de la lista con su tecnologia*/
-    list-style-image: url(IMG/java.png);
-}
-
-#sql{
-    /*Imagen de la lista con su tecnologia*/
-    list-style-image: url(IMG/mysql.png);
-}
-
 #proyectos div{
     /*Estilo FlexBox*/
     display: flex;
@@ -401,4 +388,17 @@ footer{
     background-color: rgb(23, 23, 23);
     color: gainsboro;
     border: darkgray solid 0.25vh;
+}
+   
+/*Animación de aparición*/
+@keyframes aparecer{
+    from {
+        background-color: transparent;
+        color: transparent;
+        border-color: transparent;
+        transform: scale(0.5,0.5);
+    }
+    to {
+        transform: scale(1,1);
+    }
 }
