@@ -144,28 +144,6 @@ thead{
     border: none;
 }
 
-fieldset{
-    /*Estilo de el bloque del cuestionario*/
-    background-color: rgb(200, 200, 200);
-    border-radius: 2vh;
-    padding: 2vh;
-    border: #171717 solid 0.25vh;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    /*Alineacion en el eje y*/
-    align-content: center;
-}
-
-input, textarea{
-    /*Estilo de los contenedores de texto*/
-    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
-    border-radius: 1vh;
-}
-
-textarea {
-    /*Para que no se pueda cambiar el tamaño de el textarea*/
-    resize: none;
-}
-
 footer{
     /*Estilo de el footer*/
     background-color: rgb(23, 23, 23);
@@ -368,26 +346,6 @@ footer{
     border-radius: 2vh;
     padding: 2vh;
     border: #171717 solid 0.25vh;
-}
-
-#contacto{
-    /*Estilo de la sección contacto*/
-    background-color:rgb(229, 229, 229);
-    padding: 1vw;
-    /*Colocación de la sección*/
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: space-between;
-}
-
-#boton{
-    /*Estilo de el botón*/
-    width: 100%;
-    border-radius: 1vh;
-    background-color: rgb(23, 23, 23);
-    color: gainsboro;
-    border: darkgray solid 0.25vh;
 }
    
 /*Animación de aparición*/
