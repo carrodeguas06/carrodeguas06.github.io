@@ -244,6 +244,7 @@ footer{
 #rrss{
     /*Contenedor de el grid*/
     grid-area: rrss;
+    background-color: rgb(200, 200, 200);
 }
 
 #imagengrid{
