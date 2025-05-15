@@ -111,6 +111,10 @@ th, tr, td{
     align-content: center;
 }
 
+tbody th:hover , td:hover{
+    background-color: rgb(159, 158, 158);
+}
+
 thead th{
     /*Estilo de las tablas*/
     border-top-left-radius: 1vh;
