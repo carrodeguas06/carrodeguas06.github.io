@@ -299,12 +299,12 @@ footer{
     /*Estilo FlexBox*/
     display: flex;
     flex-flow: row nowrap;
-    gap: 1vh 1vw;
+    gap: 1vh 1vw; 
     padding: 1vw;
 }
 
 #proyectos article{
-    /*Estilo de los bloques de el grid*/
+    flex: 1 1 0;
     background-color: rgb(229, 229, 229);
     border-radius: 2vh;
     padding: 2vh;
