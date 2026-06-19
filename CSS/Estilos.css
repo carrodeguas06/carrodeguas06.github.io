@@ -159,6 +159,16 @@ footer{
     align-content: center;
 }
 
+.empresa a{
+    /*Estilo de el enlace de la empresa*/
+    color: rgb(68, 68, 68);
+    transition: all 0.7s ease;
+}
+.empresa a:hover{
+    /*Estilo de el enlace de la empresa al poner encima el ratón*/
+    color: rgb(23, 23, 23);
+}
+
 #info h1{
     /*Estilo y alineación de el h1*/
     text-align: left;
@@ -353,7 +363,7 @@ footer{
     padding: 2vh;
     border: #171717 solid 0.25vh;
 }
-   
+
 /*Animación de aparición*/
 @keyframes aparecer{
     from {
